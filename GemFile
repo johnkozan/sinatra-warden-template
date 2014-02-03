@@ -1,0 +1,22 @@
+#sources
+source "http://rubygems.org"
+source "http://gems.github.com"
+
+
+# gems
+gem "sinatra", github:"sinatra/sinatra"
+gem "thin"
+
+# gems template
+gem "slim"
+
+# utilities
+gem "sinatra-flash"
+gem "sinatra-contrib"
+
+# database
+gem "sqlite3"
+gem "data_mapper"
+gem "dm-sqlite-adapter"
+
+

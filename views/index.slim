@@ -1,0 +1,22 @@
+== slim :head
+
+div.row
+  div.large-12.columns
+    form.cu-login-form action="/authorize" method="post"
+      div.row
+        div.large-12.columns
+          h3 Login 
+        div.large-12.columns
+          input type="text" placeholder="Username" id="user[username]" name="user[username]"
+        div.large-12.columns
+          input type="password" placeholder="Password" id="user[password]" name="user[password]"
+        div.large-12.columns
+          input class="button radius large-12 medium-12 small-12" type="submit" value="Continue"
+        div.large-12.columns
+          a.right href="/register" Register 
+       
+        - if flash[:error]
+            div.large-12.columns
+              div.alert-box.warning.radius [data-alert] 
+                | #{flash[:error]} 
+                a.close href="#" &times;

@@ -8,8 +8,8 @@ require "rack-flash"
 require_relative "models/init"
 
 # main class
-module Castivo
-  class SMS < Sinatra::Base
+module SST
+  class SinatraWarden < Sinatra::Base
     # enabling sessions and configuring flash
     use Rack::Session::Cookie, secret: "IdoNotHaveAnySecret"
     use Rack::Flash, accessorize: [:error, :success]

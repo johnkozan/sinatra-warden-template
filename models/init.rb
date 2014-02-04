@@ -3,7 +3,7 @@ require "data_mapper"
 require "bcrypt"
 
 # database url
-url = "sqlite://#{Dir.pwd}/db/castivo_sms_campaing.db"
+url = "sqlite://#{Dir.pwd}/db/authentication.db"
 DataMapper.setup :default, url
 
 # require models

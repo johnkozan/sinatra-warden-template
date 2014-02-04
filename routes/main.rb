@@ -1,8 +1,8 @@
 #
 # Main routing
 #
-module Castivo
-  class SMS < Sinatra::Base
+module SST
+  class SinatraWarden < Sinatra::Base
     # site index
     get "/" do
       slim :index

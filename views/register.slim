@@ -1,0 +1,21 @@
+== slim :head
+
+div.row
+  div.large-12.columns.text-center.cu-404-box
+    h5  Sorry. Currently we don't allow automatic registration, please fill your email and we will in touch soon.
+    p 
+      | or go to 
+      a href="/" Home
+
+
+div.row
+  div.large-12.columns
+    form.cu-login-form action="/user/subscription" method="post"
+      div.row
+        div.large-12.columns
+          h3 Please fill 
+        div.large-12.columns
+          input type="text" placeholder="email" id="user[email]" name="user[email]"
+        div.large-12.columns
+          input class="button radius large-12 medium-12 small-12" type="submit" value="Continue"
+

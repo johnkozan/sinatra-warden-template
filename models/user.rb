@@ -25,8 +25,7 @@ class User
     self.token = BCrypt::Engine.generate_salt if self.token.nil?
   end
 
-  def authorized? pass
-    self.pass == pass
+  def authenticate(pass)
+    self.password == pass
   end
-
 end
